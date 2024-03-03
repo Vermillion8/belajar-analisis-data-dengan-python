@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 import streamlit as st
 import numpy as np
 
-merged_hour = pd.read_csv('merged_hour.csv')
-merged_month = pd.read_csv('merged_month.csv')
-merged_year = pd.read_csv('merged_year.csv')
+merged_hour = pd.read_csv('./dashboard/merged_hour.csv')
+merged_month = pd.read_csv('./dashboard/merged_month.csv')
+merged_year = pd.read_csv('./dashboard/merged_year.csv')
 
 def correlationPlot():
   merged_hour.replace(1, np.nan, inplace=True) # Replace 1 with NaN
